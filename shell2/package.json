@@ -1,0 +1,37 @@
+{
+  "name": "shell2",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "piral"
+  ],
+  "dependencies": {
+    "piral-base": "1.0.1",
+    "piral-core": "1.0.1",
+    "react": "^16.14",
+    "react-dom": "^16.14",
+    "react-intl": "^6",
+    "react-router": "^5",
+    "react-router-dom": "^5",
+    "react-redux": "^8.1.1",
+    "redux-dynamic-modules": "^5.2.3"
+  },
+  "scripts": {
+    "start": "piral debug",
+    "build": "piral build",
+    "postinstall": "piral declaration"
+  },
+  "app": "./src/index.html",
+  "types": "dist/index.d.ts",
+  "importmap": {
+    "imports": {},
+    "inherit": [
+      "piral-base",
+      "piral-core"
+    ]
+  },
+  "devDependencies": {
+    "piral-cli": "1.0.1",
+    "piral-cli-webpack5": "1.0.1"
+  }
+}

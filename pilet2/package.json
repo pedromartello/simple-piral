@@ -1,0 +1,39 @@
+{
+  "name": "pilet2",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "pilet"
+  ],
+  "devDependencies": {
+    "piral-cli": "1.0.1",
+    "piral-cli-webpack5": "1.0.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router": "5.3.4",
+    "react-router-dom": "5.3.4",
+    "shell2": "file:../shell2/dist/emulator/shell2-1.0.0.tgz",
+    "tslib": "2.5.3"
+  },
+  "scripts": {
+    "start": "pilet debug",
+    "build": "pilet build",
+    "upgrade": "pilet upgrade"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "source": "src/index.jsx",
+  "importmap": {
+    "imports": {},
+    "inherit": [
+      "shell2"
+    ]
+  },
+  "dependencies": {
+    "react-intl": "^6.4.4",
+    "react-redux": "^8.1.1",
+    "redux-dynamic-modules": "^5.2.3"
+  }
+}
